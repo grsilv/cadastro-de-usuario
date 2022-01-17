@@ -13,6 +13,8 @@ namespace cadastro_de_usuário
             public string nome;
             public string sobrenome;
             public int idade;
+            public string email;
+            public string senha;
         }
         static void Main(string[] args)
         {
