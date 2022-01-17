@@ -33,6 +33,12 @@ namespace cadastro_de_usuário
             Console.Write("Idade: ");
             p1.idade = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("E-mail: ");
+            p1.email = Console.ReadLine();
+
+            Console.WriteLine("Senha: ");
+            p1.senha = Console.ReadLine();
+
             
             #endregion
 
