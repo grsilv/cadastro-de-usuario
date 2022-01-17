@@ -33,14 +33,21 @@ namespace cadastro_de_usuário
             Console.Write("Idade: ");
             p1.idade = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("E-mail: ");
+            Console.Write("E-mail: ");
             p1.email = Console.ReadLine();
 
-            Console.WriteLine("Senha: ");
+            Console.Write("Senha: ");
             p1.senha = Console.ReadLine();
 
-            
+
             #endregion
+
+            #region confirmação de senha
+            Console.Clear();
+            Console.Write("Por favor, confirme a senha de usuário: ");
+            string confsenha = Console.ReadLine();
+            #endregion
+
 
             #region condição
             if (p1.idade < 18)

@@ -1,8 +1,8 @@
-C:\Curso\cadastro-de-usuário\cadastro-de-usuário\bin\Debug\cadastro-de-usuário.exe.config
-C:\Curso\cadastro-de-usuário\cadastro-de-usuário\bin\Debug\cadastro-de-usuário.exe
-C:\Curso\cadastro-de-usuário\cadastro-de-usuário\bin\Debug\cadastro-de-usuário.pdb
 C:\Curso\cadastro-de-usuário\cadastro-de-usuário\obj\Debug\cadastro-de-usuário.csproj.AssemblyReference.cache
 C:\Curso\cadastro-de-usuário\cadastro-de-usuário\obj\Debug\cadastro-de-usuário.csproj.SuggestedBindingRedirects.cache
 C:\Curso\cadastro-de-usuário\cadastro-de-usuário\obj\Debug\cadastro-de-usuário.csproj.CoreCompileInputs.cache
-C:\Curso\cadastro-de-usuário\cadastro-de-usuário\obj\Debug\cadastro-de-usuário.exe
-C:\Curso\cadastro-de-usuário\cadastro-de-usuário\obj\Debug\cadastro-de-usuário.pdb
+C:\Curso\cadastro-de-usuário\cadastro-de-usuário\bin\Debug\cadastro-de-usuario.exe.config
+C:\Curso\cadastro-de-usuário\cadastro-de-usuário\bin\Debug\cadastro-de-usuario.exe
+C:\Curso\cadastro-de-usuário\cadastro-de-usuário\bin\Debug\cadastro-de-usuario.pdb
+C:\Curso\cadastro-de-usuário\cadastro-de-usuário\obj\Debug\cadastro-de-usuario.exe
+C:\Curso\cadastro-de-usuário\cadastro-de-usuário\obj\Debug\cadastro-de-usuario.pdb
