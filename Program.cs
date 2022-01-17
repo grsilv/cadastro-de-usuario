@@ -19,34 +19,48 @@ namespace cadastro_de_usuário
         static void Main(string[] args)
         {
             #region informações
-            Console.WriteLine("Preencha as informações");
-            Console.WriteLine();
+                Console.WriteLine("Preencha as informações");
+                Console.WriteLine();
 
-            Pessoa p1 = new Pessoa();
+                Pessoa p1 = new Pessoa();
 
-            Console.Write("Nome: ");
-            p1.nome = Console.ReadLine();
+                Console.Write("Nome: ");
+                p1.nome = Console.ReadLine();
 
-            Console.Write("Sobrenome: ");
-            p1.sobrenome = Console.ReadLine();
+                Console.Write("Sobrenome: ");
+                p1.sobrenome = Console.ReadLine();
 
-            Console.Write("Idade: ");
-            p1.idade = int.Parse(Console.ReadLine());
+                Console.Write("Idade: ");
+                p1.idade = int.Parse(Console.ReadLine());
 
-            Console.Write("E-mail: ");
-            p1.email = Console.ReadLine();
+                Console.Write("E-mail: ");
+                p1.email = Console.ReadLine();
 
-            Console.Write("Senha: ");
-            p1.senha = Console.ReadLine();
+                Console.Write("Senha: ");
+                p1.senha = Console.ReadLine();
             #endregion
-            
+
             #region confirmação de senha
             Console.Clear();
             Console.Write("Por favor, confirme a senha de usuário: ");
             string confsenha = Console.ReadLine();
             #endregion
 
-            
+            #region while
+            while (confsenha != p1.senha)
+            {
+                Console.Write("Senha incorreta. Tente de novo: ");
+                confsenha = Console.ReadLine();
+            }
+
+            Console.WriteLine("Cadastro concluído. Seja bem-vindo " + p1.nome + " " + p1.sobrenome);
+            Console.WriteLine();
+
+            Console.WriteLine("Pressione qualquer tecla do teclado para finalizar.");
+            Console.ReadKey();
+
+            #endregion
+
         }
     }
 }
