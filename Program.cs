@@ -52,13 +52,14 @@ namespace cadastro_de_usuário
                 Console.Write("Senha incorreta. Tente de novo: ");
                 confsenha = Console.ReadLine();
             }
+            #endregion
 
+            #region conclusão de cadastro
             Console.WriteLine("Cadastro concluído. Seja bem-vindo " + p1.nome + " " + p1.sobrenome);
             Console.WriteLine();
 
             Console.WriteLine("Pressione qualquer tecla do teclado para finalizar.");
             Console.ReadKey();
-
             #endregion
 
         }
