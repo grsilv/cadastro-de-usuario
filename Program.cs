@@ -38,13 +38,22 @@ namespace cadastro_de_usuário
 
                 Console.Write("Senha: ");
                 p1.senha = Console.ReadLine();
+            #endregion // aqui o sistema vai pedir pro usuário fornecer o cadastro
+
+            #region idade
+            while ((p1.idade < 0) || (p1.idade >150))
+            {
+                Console.Write("Idade não existe. Digite outra:");
+                p1.idade = int.Parse(Console.ReadLine());
+            }
             #endregion
+
 
             #region confirmação de senha
             Console.Clear();
             Console.Write("Por favor, confirme a senha de usuário: ");
             string confsenha = Console.ReadLine();
-            #endregion
+            #endregion // aqui, o usuário confirmará a senha
 
             #region while
             while (confsenha != p1.senha)
@@ -52,15 +61,17 @@ namespace cadastro_de_usuário
                 Console.Write("Senha incorreta. Tente de novo: ");
                 confsenha = Console.ReadLine();
             }
-            #endregion
+            #endregion  // o sistema vai analisar se a confirmação da senha bate com a senha informada no início
 
             #region conclusão de cadastro
+
             Console.WriteLine("Cadastro concluído. Seja bem-vindo " + p1.nome + " " + p1.sobrenome);
             Console.WriteLine();
-
-            Console.WriteLine("Pressione qualquer tecla do teclado para finalizar.");
+            
+            Console.WriteLine("Pressione qualquer tecla para finalizar.");
             Console.ReadKey();
-            #endregion
+
+            #endregion // depois de ter passado pela confirmação, o usuário estará cadastrado.
 
         }
     }
