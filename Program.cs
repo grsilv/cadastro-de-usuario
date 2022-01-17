@@ -38,30 +38,15 @@ namespace cadastro_de_usuário
 
             Console.Write("Senha: ");
             p1.senha = Console.ReadLine();
-
-
             #endregion
-
+            
             #region confirmação de senha
             Console.Clear();
             Console.Write("Por favor, confirme a senha de usuário: ");
             string confsenha = Console.ReadLine();
             #endregion
 
-
-            #region condição
-            if (p1.idade < 18)
-            {
-                Console.WriteLine("Você não pode ser cadastrado. Idade mínima de 18 anos.");
-                Console.ReadKey();
-            }
-            else
-            {
-                Console.WriteLine("Cadastro concluído. Seja bem-vindo " + p1.nome + " " + p1.sobrenome + "!");
-                Console.WriteLine("Pressione uma tecla para finalizar.");
-                Console.ReadKey();
-            }
-            #endregion
+            
         }
     }
 }
