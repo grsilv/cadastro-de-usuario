@@ -19,10 +19,13 @@ namespace cadastro_de_usuário
         static void Main(string[] args)
         {
             #region informações
+            Pessoa p1 = new Pessoa();
+            
+                p1.idade = 0;
+            do
+            {
                 Console.WriteLine("Preencha as informações");
                 Console.WriteLine();
-
-                Pessoa p1 = new Pessoa();
 
                 Console.Write("Nome: ");
                 p1.nome = Console.ReadLine();
@@ -40,14 +43,23 @@ namespace cadastro_de_usuário
                 p1.senha = Console.ReadLine();
             #endregion // aqui o sistema vai pedir pro usuário fornecer o cadastro
 
-            #region idade
-            while ((p1.idade < 0) || (p1.idade >150))
+            #region idade inexistente
+            while ((p1.idade < 0) || (p1.idade > 150))
             {
                 Console.Write("Idade não existe. Digite outra:");
                 p1.idade = int.Parse(Console.ReadLine());
             }
-            #endregion
+                #endregion // se o usuário informar uma idade que não tem como existir (-2 ou 200, por exemplo), aplicará-se um while.
 
+            #region while idade 18
+                Console.WriteLine("Cuidado: menores de 18 anos não podem acessar.");
+                Console.WriteLine("Digite uma tecla para avançar.");
+
+                Console.ReadKey();
+                Console.Clear();
+
+            } while (p1.idade < 18);
+            #endregion // se o usuário for menor de 18, o cadastro vai resetar.
 
             #region confirmação de senha
             Console.Clear();
@@ -61,11 +73,13 @@ namespace cadastro_de_usuário
                 Console.Write("Senha incorreta. Tente de novo: ");
                 confsenha = Console.ReadLine();
             }
+
+                Console.Clear();
             #endregion  // o sistema vai analisar se a confirmação da senha bate com a senha informada no início
 
             #region conclusão de cadastro
 
-            Console.WriteLine("Cadastro concluído. Seja bem-vindo " + p1.nome + " " + p1.sobrenome);
+            Console.WriteLine("Cadastro concluído. Seja bem-vindo " + p1.nome + " " + p1.sobrenome + "!");
             Console.WriteLine();
             
             Console.WriteLine("Pressione qualquer tecla para finalizar.");
